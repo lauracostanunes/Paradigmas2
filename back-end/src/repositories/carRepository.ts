@@ -1,10 +1,10 @@
-import { prisma } from "../database/client.ts";
+import { prisma } from "../database/client";
 
-import type { CreateCarDto }
+import type {CreateCarDto}
   from "../dto/car/createCarDto.ts";
 
 import type { UpdateCarDto }
-  from "../dto/car/updateCarDto.ts";
+  from "../dto/car/updateCarDto";
 
 export function findAll() {
   return prisma.car.findMany({

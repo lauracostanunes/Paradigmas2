@@ -1,8 +1,8 @@
-import * as repository from "../repositories/carRepository.ts";
+import * as repository from "../repositories/carRepository";
 
-import type { Car } from "../../generated/prisma/client.ts";
-import type { CreateCarDto } from "../dto/car/createCarDto.ts";
-import type { UpdateCarDto } from "../dto/car/updateCarDto.ts";
+import type { Car } from "../generated/prisma/client";
+import type { CreateCarDto } from "../dto/car/createCarDto";
+import type { UpdateCarDto } from "../dto/car/updateCarDto";
 
 import { NotFoundError } from "../errors/NotFoundError.js"
 

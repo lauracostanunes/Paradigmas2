@@ -4,7 +4,7 @@ import type {
   NextFunction,
 } from "express";
 
-import * as service from "../services/carService";
+import * as service from "../services/carServices";
 
 import type { CreateCarDto } from "../dto/car/createCarDto";
 import type { UpdateCarDto } from "../dto/car/updateCarDto";

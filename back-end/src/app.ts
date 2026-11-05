@@ -8,7 +8,13 @@ import customersRouter from './routes/customers'
 
 import carsRouter from './routes/cars'
 
+import cors from 'cors'
+
 const app = express()
+
+app.use(cors({
+    origin: process.env.ALLOWED_ORIGINS.split(','),
+   }))   
 
 app.use(logger('dev'))
 app.use(json())
